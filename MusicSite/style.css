@@ -1,0 +1,148 @@
+:root{
+    --color: #5f5f5f
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(resources/image.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.navbar{
+    width: 88%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 140px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: var(--color)
+}
+
+.navbar ul li a:hover{
+    color: rgb(255, 74, 104);
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: 1s;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+}
+
+.left{
+    margin-left: 6%;
+}
+
+.left h1{
+    font-size: 90px;
+    color: rgb(255, 255, 255);
+    line-height: 120px;
+    float: left;
+}
+
+.right{
+    float: right;
+    margin-top: 120px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.right p{
+    font-style: 18px;
+    color: var(--color);
+    font-weight: 400px;
+    margin-right: 15px;
+}
+
+
+#play{
+    width: 80px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 991px){
+    
+    .container{
+        height: 100vh;
+        width: 100%;
+        background-image: url(resources/image.png);
+        background-size: cover;
+        background-position: (100px,12px);
+        position: relative;
+    }
+
+    .navbar ul{
+        display: none;
+    }
+
+    .logo{
+        width: 120px;
+        cursor: pointer;
+    }
+
+    .content{
+        width: 100%;
+        position: absolute;
+        top: 10%;
+    }
+
+    .left{
+        margin-left: 3%;
+    }
+    
+    .left h1{
+        margin-top: 150px;
+        font-size: 80px;
+        color: rgb(255, 255, 255);
+        line-height: 100px;
+        float: left;
+    }
+
+    .right{
+        float: left;
+        margin: 125px 0 0 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    .right p{
+        font-size: 17px;
+        color: var(--color);
+        font: bold;
+        margin-left: 10px;
+    }
+
+    #play{
+        width: 80px;
+        cursor: pointer;
+    }
+
+}
